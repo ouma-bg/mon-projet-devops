@@ -14,8 +14,11 @@ provisionnée en Infrastructure as Code (Terraform) sur AWS.
 - **Registry** : Docker Hub
 
 ## Architecture
+```bash
 GitHub → Jenkins → Build Docker Image → Push Registry → Terraform Apply → Déploiement EC2
+```
 ## Structure du projet
+```bash
 mon-projet-devops/
 ├── app.py              # Application Flask
 ├── requirements.txt    # Dépendances Python
@@ -25,6 +28,7 @@ mon-projet-devops/
 ├── main.tf          # Ressources AWS (EC2, Security Group)
 ├── variables.tf     # Variables Terraform
 └── outputs.tf       # Outputs (IP de l'instance)
+```
 ## Installation locale
 ```bash
 pip install -r requirements.txt
